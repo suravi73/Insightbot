@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 load_dotenv()
 
 # Get credentials from env
-api_key = os.getenv("api_key_groq")  # ✅ Use uppercase, underscores
+api_key = os.getenv("api_key_groq") 
 model_name = os.getenv("model_groq", "llama3-70b-8192")
 
 if not api_key:
