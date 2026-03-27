@@ -1,5 +1,5 @@
 """
-🧠 DocuMind — Intelligent Document Q&A Assistant
+🧠 Insightbot — Intelligent Document Q&A Assistant
 A versatile chatbot that answers questions from PDFs or websites using Groq + Llama3.
 Supports continuous conversation with context memory.
 
@@ -58,7 +58,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 # 🔀 Choose source: PDF or Website
-print("📚 Welcome to DocuMind! Load your knowledge source.")
+print("📚 Welcome to Insightbot! Load your knowledge source.")
 source_type = input("Choose source: (1) PDF  (2) Website: ").strip()
 
 document_text = ""
@@ -104,7 +104,7 @@ conversation_history = [
     {"role": "system", "content": system_prompt}
 ]
 
-print("\n🤖 DocuMind Ready! Ask anything about your content.")
+print("\n🤖 Insightbot Ready! Ask anything about your content.")
 print("💡 Type 'quit', 'exit', or 'bye' to end the chat.\n")
 
 # 🔄 Main Chat Loop
@@ -113,7 +113,7 @@ while True:
     
     # Check for exit commands
     if user_input.lower() in ['quit', 'exit', 'bye', 'q']:
-        print(f"🤖 Thank you for using {os.getenv('PROJECT_NAME')}! Goodbye! 👋\n")
+        print(f"🤖 Thank you for using Insightbot! Goodbye! 👋\n")
         break
     
     if not user_input:
